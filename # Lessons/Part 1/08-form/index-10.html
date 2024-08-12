@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <legend>Language preference:</legend>
+        <label>
+          <input type="radio" name="language" checked />
+          English
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          French
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          Mandarin
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="radio" name="language" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+
+      <!-- Horizontal Stacking -->
+      <fieldset>
+        <legend>Second language:</legend>
+        <input type="radio" id="hindi" name="second-language" checked />
+        <label htmlFor="hindi">Hindi</label>
+        <input type="radio" id="swahili" name="second-language" />
+        <label htmlFor="swahili">Swahili</label>
+        <input type="radio" id="navi" name="second-language" disabled />
+        <label htmlFor="navi" aria-disabled="true">Na'vi</label>
+      </fieldset>
+
+      <!-- Validate States -->
+      <fieldset>
+        <label>
+          <input type="radio" name="validation-states" aria-invalid="false" />
+          Valid
+        </label>
+        <label>
+          <input type="radio" name="validation-states" aria-invalid="true" />
+          Invalid
+        </label>
+      </fieldset>
+    </div>
+    <script>
+      /*
+        Radios
+        - The native <input type="radio"> with a custom and responsive style.
+        
+      */
+    </script>
+  </body>
+</html>

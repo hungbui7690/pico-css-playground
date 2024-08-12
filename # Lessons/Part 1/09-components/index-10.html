@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Search -->
+      <form role="search">
+        <input name="search" type="search" placeholder="Search" />
+        <input type="submit" value="Search" />
+      </form>
+
+      <!-- role="group" is also useful for grouping a series of buttons. -->
+      <div role="group">
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+
+      <div role="group">
+        <button aria-current="true">Active</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+
+      <div role="group">
+        <button>Button</button>
+        <button class="secondary">Button</button>
+        <button class="contrast">Button</button>
+      </div>
+    </div>
+    <script>
+      /*
+        Search#
+        - role="search" also stacks children horizontally and brings a special style, consistent with <input type="search"> (see Search input).
+        
+      */
+    </script>
+  </body>
+</html>

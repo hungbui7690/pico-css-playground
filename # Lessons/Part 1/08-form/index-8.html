@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- The native <select> is styled like the input for consistency. -->
+      <select
+        name="favorite-cuisine"
+        aria-label="Select your favorite cuisine..."
+        required
+      >
+        <option selected disabled value="">
+          Select your favorite cuisine...
+        </option>
+        <option>Italian</option>
+        <option>Japanese</option>
+        <option>Indian</option>
+        <option>Thai</option>
+        <option>French</option>
+      </select>
+
+      <!-- Multiple vs Size -->
+      <select aria-label="Select your favorite snacks..." multiple size="6">
+        <option disabled>Select your favorite snacks...</option>
+        <option>Cheese</option>
+        <option selected>Fruits</option>
+        <option selected>Nuts</option>
+        <option>Chocolate</option>
+        <option>Crackers</option>
+      </select>
+
+      <!-- Disabled -->
+      <select name="meal-type" aria-label="Select a meal type..." disabled>
+        <option>Select a meal type...</option>
+        <option>...</option>
+      </select>
+
+      <!-- Validation states -->
+      <select aria-invalid="false">
+        ...
+      </select>
+      <small>Great choice!</small>
+
+      <select required aria-invalid="true">
+        ...
+      </select>
+      <small> Please select your favorite pizza topping! </small>
+    </div>
+    <script>
+      /*
+        Select
+        - The native <select> is styled like the input for consistency
+        
+      */
+    </script>
+  </body>
+</html>

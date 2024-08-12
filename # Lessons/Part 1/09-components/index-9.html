@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <fieldset role="group">
+          <input
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+          />
+          <input type="submit" value="Subscribe" />
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset role="group">
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            autocomplete="email"
+          />
+          <input name="password" type="password" placeholder="Password" />
+          <input type="submit" value="Log in" />
+        </fieldset>
+      </form>
+    </div>
+    <script>
+      /*
+        Group
+        - Stack forms elements and buttons horizontally with role="group" and role="search".
+        - role="group" is used to stack children horizontally.
+        - When used with the <form> tag, the group is width: 100%;.
+        - Unlike .grid (see Grid), columns are not collapsed on mobile devices.
+        
+      */
+    </script>
+  </body>
+</html>

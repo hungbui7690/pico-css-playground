@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Typography</title>
+    <style>
+      div {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>Button</button>
+
+      <!-- Variants -->
+      <button class="secondary">Secondary</button>
+      <button class="contrast">Contrast</button>
+
+      <!-- Outlined -->
+      <button class="outline">Primary</button>
+      <button class="outline secondary">Secondary</button>
+      <button class="outline contrast">Contrast</button>
+
+      <!-- Form Button -->
+      <input type="submit" />
+      <input type="button" value="Input" />
+      <input type="reset" />
+
+      <!-- Disabled -->
+      <button disabled>Disabled</button>
+      <button class="secondary" disabled>Disabled</button>
+      <button class="contrast" disabled>Disabled</button>
+
+      <!-- Role Button -->
+      <div role="button" tabindex="0">Div as a button</div>
+
+      <!-- Group -->
+      <div role="group">
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+    </div>
+
+    <script>
+      /*
+        Button
+        - Buttons are using the native <button> tag, without .classes. for the default style.
+      
+        # Variants#
+        - Buttons come with .secondary and .contrast styles (not available in the class-less version).
+
+      */
+    </script>
+  </body>
+</html>

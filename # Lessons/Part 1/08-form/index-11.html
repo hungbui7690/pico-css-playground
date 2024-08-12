@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <label>
+          <input name="terms" type="checkbox" role="switch" disabled />
+          I agree to the Terms
+        </label>
+        <label>
+          <input name="opt-in" type="checkbox" role="switch" checked />
+          Receive news and offers
+        </label>
+      </fieldset>
+
+      <!-- Validate States -->
+      <fieldset>
+        <label>
+          <input
+            name="2fa"
+            type="checkbox"
+            role="switch"
+            aria-invalid="false"
+          />
+          Enable two-factor authentication
+        </label>
+        <label>
+          <input
+            name="subscription"
+            type="checkbox"
+            role="switch"
+            aria-invalid="true"
+          />
+          Automatic subscription renewal
+        </label>
+      </fieldset>
+    </div>
+    <script>
+      /*
+        Switch
+        - A switch component in pure CSS, using the checkbox syntax.
+        
+      */
+    </script>
+  </body>
+</html>

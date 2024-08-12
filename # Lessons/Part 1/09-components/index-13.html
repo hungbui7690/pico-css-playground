@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Inside <footer>, the content is right aligned by default. -->
+      <dialog open>
+        <article>
+          <h2>Confirm Your Membership</h2>
+          <p>
+            Thank you for signing up for a membership! Please review the
+            membership details below:
+          </p>
+          <ul>
+            <li>Membership: Individual</li>
+            <li>Price: $10</li>
+          </ul>
+          <footer>
+            <button class="secondary">Cancel</button>
+            <button>Confirm</button>
+          </footer>
+        </article>
+      </dialog>
+    </div>
+    <script>
+      /*
+        Demo#
+        - Toggle a modal by clicking the button below.
+        - Pico does not include JavaScript code. You need to implement your JS to interact with modals.
+        - As a starting point, you can look at the HTMLDialogElement or the advanced examples below:
+          + Vanilla JavaScript
+          + React
+        - To open a modal, add the open attribute to the<dialog> container.
+        
+      */
+    </script>
+  </body>
+</html>

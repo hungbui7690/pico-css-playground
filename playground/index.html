@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Tooltip on a <a href="#" data-tooltip="Tooltip">link</a></p>
+      <p>Tooltip on <em data-tooltip="Tooltip">inline element</em></p>
+      <p><button data-tooltip="Tooltip">Tooltip on a button</button></p>
+    </div>
+
+    <!-- The tooltip is displayed on top by default but you can change it with the data-placement attribute. -->
+    <div>
+      <button data-tooltip="Top">Top</button>
+      <button data-tooltip="Right" data-placement="right">Right</button>
+      <button data-tooltip="Bottom" data-placement="bottom">Bottom</button>
+      <button data-tooltip="Left" data-placement="left">Left</button>
+    </div>
+
+    <script>
+      /*
+        Tooltip
+        - Enable tooltips everywhere, without JavaScript.
+        
+      */
+    </script>
+  </body>
+</html>

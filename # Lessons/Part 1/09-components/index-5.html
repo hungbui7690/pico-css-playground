@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Radios -->
+      <details class="dropdown">
+        <summary>Select a phase of matter...</summary>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="solid" />
+              Solid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="liquid" />
+              Liquid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="gas" />
+              Gas
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="plasma" />
+              Plasma
+            </label>
+          </li>
+        </ul>
+      </details>
+
+      <!-- Checkboxes -->
+      <details class="dropdown">
+        <summary>Select phases of matter...</summary>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="solid" />
+              Solid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="liquid" />
+              Liquid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="gas" />
+              Gas
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="plasma" />
+              Plasma
+            </label>
+          </li>
+        </ul>
+      </details>
+    </div>
+    <script>
+      /*
+        Dropdowns with checkboxes and radios#
+        - Dropdowns can be used as custom selects with <input type="radio"> or <input type="checkbox">.
+        
+      */
+    </script>
+  </body>
+</html>

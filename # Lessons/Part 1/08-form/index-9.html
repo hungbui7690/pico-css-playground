@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- The native <input type="checkbox"> with a custom and responsive style. -->
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <label>
+          <input type="checkbox" name="english" checked />
+          English
+        </label>
+        <label>
+          <input type="checkbox" name="french" checked />
+          French
+        </label>
+        <label>
+          <input type="checkbox" name="mandarin" />
+          Mandarin
+        </label>
+        <label>
+          <input type="checkbox" name="thai" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="checkbox" name="dothraki" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+      <hr />
+
+      <!-- Horizontal stacking -->
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <input type="checkbox" id="hindi" name="hindi" checked />
+        <label htmlFor="hindi">Hindi</label>
+        <input type="checkbox" id="swahili" name="swahili" />
+        <label htmlFor="swahili">Swahili</label>
+        <input type="checkbox" id="navi" name="navi" disabled />
+        <label htmlFor="navi" aria-disabled="true">Na'vi</label>
+      </fieldset>
+      <hr />
+
+      <!-- Indeterminate -> You can change a checkbox to an indeterminate state by setting the indeterminate property to true. -> need to use script -->
+      <label>
+        <input type="checkbox" id="indeterminate" name="indeterminate" />
+        Indeterminate
+      </label>
+
+      <!-- Validation states are provided with aria-invalid. -->
+      <label>
+        <input type="checkbox" name="valid" aria-invalid="false" />
+        Valid
+      </label>
+
+      <label>
+        <input type="checkbox" name="invalid" aria-invalid="true" />
+        Invalid
+      </label>
+    </div>
+    <script>
+      /*
+        Checkboxes
+        - The native <input type="checkbox"> with a custom and responsive style.
+        
+      */
+
+      const checkbox = document.querySelector('#indeterminate')
+      checkbox.indeterminate = true
+    </script>
+  </body>
+</html>

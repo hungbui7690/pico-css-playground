@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- The native <textarea> is styled like the input for consistency. -->
+      <textarea
+        name="bio"
+        placeholder="Write a professional short bio..."
+        aria-label="Professional short bio"
+      ></textarea>
+
+      <!-- Disabled -->
+      <textarea name="disabled" disabled>
+        Disabled
+      </textarea>
+
+      <!-- Read Only -->
+      <textarea name="read-only" readonly>
+        Read-only
+      </textarea>
+
+      <!-- Validation -->
+      <textarea name="valid" aria-invalid="false">
+        Valid
+      </textarea>
+
+      <textarea name="invalid" aria-invalid="true">
+        Invalid
+      </textarea>
+
+      <textarea
+        name="valid"
+        aria-invalid="false"
+        aria-describedby="valid-helper"
+      >
+Valid</textarea
+      >
+      <small id="valid-helper">Looks good!</small>
+
+      <textarea
+        name="invalid"
+        aria-invalid="true"
+        aria-describedby="invalid-helper"
+      >
+Invalid</textarea
+      >
+      <small id="invalid-helper"> Please provide a valid value! </small>
+    </div>
+    <script>
+      /*
+        Validation states#
+        - Validation states are provided with aria-invalid.
+        
+      */
+    </script>
+  </body>
+</html>

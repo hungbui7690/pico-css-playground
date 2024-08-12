@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      form {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Validation states are provided with aria-invalid. -->
+    <input type="text" name="valid" value="Valid" aria-invalid="false" />
+    <input type="text" name="invalid" value="Invalid" aria-invalid="true" />
+
+    <!-- Helper texts, defined with <small> below the form element, inherit the validation state color. -->
+    <input
+      type="text"
+      name="valid"
+      value="Valid"
+      aria-invalid="false"
+      aria-describedby="valid-helper"
+    />
+    <small id="valid-helper">Looks good!</small>
+
+    <input
+      type="text"
+      name="invalid"
+      value="Invalid"
+      aria-invalid="true"
+      aria-describedby="invalid-helper"
+    />
+    <small id="invalid-helper"> Please provide a valid value! </small>
+
+    <script>
+      /*
+        Validation states#
+        - Validation states are provided with aria-invalid.
+        
+      */
+    </script>
+  </body>
+</html>

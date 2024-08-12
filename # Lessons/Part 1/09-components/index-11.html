@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      div {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- It can be applied to any block: -->
+      <article aria-busy="true"></article>
+
+      <!-- Any inline element: -->
+      <span aria-busy="true">Generating your link...</span>
+
+      <br />
+
+      <!-- Any button: -->
+      <button aria-busy="true" aria-label="Please wait…" />
+      <button aria-busy="true" aria-label="Please wait…" class="secondary" />
+      <button aria-busy="true" aria-label="Please wait…" class="contrast" />
+      <br />
+      <button aria-busy="true" class="outline">Please wait…</button>
+      <button aria-busy="true" class="outline secondary">Please wait…</button>
+      <button aria-busy="true" class="outline contrast">Please wait…</button>
+    </div>
+    <script>
+      /*
+        Loading
+        - Add a loading indicator with aria-busy="true".
+        
+      */
+    </script>
+  </body>
+</html>

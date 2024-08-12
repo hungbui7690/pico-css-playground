@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Form</title>
+    <style>
+      form {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- Input inside label -->
+      <label>
+        First name
+        <input
+          name="first_name"
+          placeholder="First name"
+          autocomplete="given-name"
+        />
+      </label>
+
+      <!-- Input outside label -->
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" autocomplete="email" />
+
+      <!-- Helped Text -->
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        autocomplete="password"
+        aria-label="Password"
+        aria-describedby="password-helper"
+      />
+      <small id="password-helper">
+        We'll never share your email with anyone else.
+      </small>
+    </form>
+
+    <script>
+      /*
+        Forms overview
+        - <input> can be inside or outside <label>.
+
+        # Helper text#
+        - <small> below form elements are muted and act as helper texts.
+
+      */
+    </script>
+  </body>
+</html>
